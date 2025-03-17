@@ -3,12 +3,62 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TailorPadi.WebClient", "TailorPadi.WebClient\TailorPadi.WebClient.csproj", "{5CBEDC91-7AC1-4D11-B610-649CF1658D75}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TailorPadi.WebAPI", "TailorPadi.WebAPI\TailorPadi.WebAPI.csproj", "{91CE68B2-2E8D-4AFD-A6F0-4CA0FDCCA1E3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{6C0EB52B-2991-4E5D-8B67-DB5D043FCF6C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{91D89388-4FD8-42B9-8065-C69940E4645E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{75D58DD9-1CF7-443C-B879-6B625A86CE22}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TailorPadi.Data", "TailorPadi.Data\TailorPadi.Data.csproj", "{E98B9F57-CD43-4F69-AA41-304AEA6DB9F0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TailorPadi.Core.Service", "TailorPadi.Core.Service\TailorPadi.Core.Service.csproj", "{F659B2A5-1C4D-4103-911E-629BD42CE514}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TailorPadi.Shared.Service", "TailorPadi.Shared.Service\TailorPadi.Shared.Service.csproj", "{6CBFAB86-9532-46DB-9432-713531FB3FC1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TailorPadi.Infrastructure", "TailorPadi.Infrastructure\TailorPadi.Infrastructure.csproj", "{A81C6156-9C6F-4DC9-B08B-88088BAE2710}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5CBEDC91-7AC1-4D11-B610-649CF1658D75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5CBEDC91-7AC1-4D11-B610-649CF1658D75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5CBEDC91-7AC1-4D11-B610-649CF1658D75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5CBEDC91-7AC1-4D11-B610-649CF1658D75}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91CE68B2-2E8D-4AFD-A6F0-4CA0FDCCA1E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91CE68B2-2E8D-4AFD-A6F0-4CA0FDCCA1E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91CE68B2-2E8D-4AFD-A6F0-4CA0FDCCA1E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91CE68B2-2E8D-4AFD-A6F0-4CA0FDCCA1E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E98B9F57-CD43-4F69-AA41-304AEA6DB9F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E98B9F57-CD43-4F69-AA41-304AEA6DB9F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E98B9F57-CD43-4F69-AA41-304AEA6DB9F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E98B9F57-CD43-4F69-AA41-304AEA6DB9F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F659B2A5-1C4D-4103-911E-629BD42CE514}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F659B2A5-1C4D-4103-911E-629BD42CE514}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F659B2A5-1C4D-4103-911E-629BD42CE514}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F659B2A5-1C4D-4103-911E-629BD42CE514}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6CBFAB86-9532-46DB-9432-713531FB3FC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CBFAB86-9532-46DB-9432-713531FB3FC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CBFAB86-9532-46DB-9432-713531FB3FC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CBFAB86-9532-46DB-9432-713531FB3FC1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A81C6156-9C6F-4DC9-B08B-88088BAE2710}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A81C6156-9C6F-4DC9-B08B-88088BAE2710}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A81C6156-9C6F-4DC9-B08B-88088BAE2710}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A81C6156-9C6F-4DC9-B08B-88088BAE2710}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E98B9F57-CD43-4F69-AA41-304AEA6DB9F0} = {75D58DD9-1CF7-443C-B879-6B625A86CE22}
+		{F659B2A5-1C4D-4103-911E-629BD42CE514} = {6C0EB52B-2991-4E5D-8B67-DB5D043FCF6C}
+		{6CBFAB86-9532-46DB-9432-713531FB3FC1} = {6C0EB52B-2991-4E5D-8B67-DB5D043FCF6C}
+		{A81C6156-9C6F-4DC9-B08B-88088BAE2710} = {91D89388-4FD8-42B9-8065-C69940E4645E}
 	EndGlobalSection
 EndGlobal
