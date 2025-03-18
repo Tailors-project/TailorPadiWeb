@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using TailorPadi.Core.Service.Interface;
 
 namespace TailorPadi.WebAPI.Controllers;
 [ApiController]
@@ -11,10 +12,12 @@ public class WeatherForecastController : ControllerBase
     };
 
     private readonly ILogger<WeatherForecastController> _logger;
+    private readonly ITestService _testService;
 
-    public WeatherForecastController(ILogger<WeatherForecastController> logger)
+    public WeatherForecastController(ILogger<WeatherForecastController> logger, ITestService testService)
     {
         _logger = logger;
+        _testService = testService;
     }
 
     [HttpGet(Name = "GetWeatherForecast")]
@@ -27,5 +30,12 @@ public class WeatherForecastController : ControllerBase
             Summary = Summaries[Random.Shared.Next(Summaries.Length)]
         })
         .ToArray();
+    }
+
+    [HttpGet("names")]
+    public IActionResult GetNames()
+    {
+        var names = _testService.GetNames();
+        return Ok(names);
     }
 }
